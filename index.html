@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="HealthCare WebSite">
+    <meta name="og:title" content="HealthCare WebSite">
+    <meta name="og:description" content="HealthCare WebSite">
+    <meta name="og:url" content="#">
+    <meta name="og:site_name" content="HealthCare WebSite">
+    <meta name="og:type" content="website">
     <title>HealthCare</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="wrapper">
         <div class="nav">
@@ -19,27 +28,23 @@
                 <a href="#" class="mainlink">Corona Updates</a>
                 <a href="#">Help</a>
                 <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
-
         <!-- LANDING PAGE -->
-
         <div class="landing">
             <div class="landingText" data-aos="fade-up" data-aos-duration="1000">
                 <h1>Stay In.<span style="color:#e0501b;font-size: 4vw"> Stay Safe.</span> </h1>
                 <h3>Lets all work together to put an end to this pandemic. <br> Help stop the spread.</h3>
                 <div class="btn">
-                    <a href="#">Learn More</a>
+                    <a href="#contact">Regístrate</a>
                 </div>
             </div>
             <div class="landingImage" data-aos="fade-down" data-aos-duration="2000">
                 <img src="img/bg.png" alt="">
             </div>
         </div>
-
         <!-- ABOUT SECTION -->
-
         <div class="about">
             <div class="aboutText" data-aos="fade-up" data-aos-duration="1000">
                 <h1>Why is it important that <br> <span style="color:#2f8be0;font-size:3vw">You Stay Home?</span> </h1>
@@ -47,29 +52,29 @@
             </div>
             <div class="aboutList" data-aos="fade-left" data-aos-duration="1000">
                 <ol>
-                    <li> 
+                    <li>
                         <span>01</span>
-                         <p>Covid-19, which is now a fast growing global pandemic. The number of confirmed cases worldwide has exceeded 25,65,000 due to rapid spreading of the virus.</p>
+                        <p>Covid-19, which is now a fast growing global pandemic. The number of confirmed cases worldwide has exceeded 25,65,000 due to rapid spreading of the virus.</p>
                     </li>
-                    <li> 
+                    <li>
                         <span>02</span>
-                         <p>Covid-19, spreads very easily, much easier than many other regular illnesses we deal with on a regular basis. That's what makes it so dangerous.</p>
+                        <p>Covid-19, spreads very easily, much easier than many other regular illnesses we deal with on a regular basis. That's what makes it so dangerous.</p>
                     </li>
-                    <li> 
+                    <li>
                         <span>03</span>
-                         <p>The best course of action is to stay at home prevent the spread of the disease as well as hospitals getting overwhelmed with patients who simply shoudn't be there.</p>
+                        <p>The best course of action is to stay at home prevent the spread of the disease as well as hospitals getting overwhelmed with patients who simply shoudn't be there.</p>
                     </li>
-                    <li> 
+                    <li>
                         <span>04</span>
-                         <p>As of today, there is no know cure and no approved vaccine for Covid-19</p>
+                        <p>As of today, there is no know cure and no approved vaccine for Covid-19</p>
                     </li>
-
                 </ol>
+                <br>
+                <br>
             </div>
+
         </div>
-
         <!-- INFO SECTION -->
-
         <div class="infoSection">
             <div class="infoHeader" data-aos="fade-up" data-aos-duration="1000">
                 <h1>Things you could do during the <br> <span style="color:#e0501b">Coronavirus Quarantine.</span> </h1>
@@ -116,15 +121,63 @@
                 </div>
             </div>
         </div>
-
-
+        <div class="infoSection" id="contact">
+            <div class="infoHeader" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card">
+                    <br>
+                    <h1>Things you could do during the <br> <span style="color:#e0501b">Inscríbete aquí</span> </h1>                    
+                    <div class="cardContent">
+                    <form id="form">
+                        <div class="form-group row">
+                            <label for="firstname" class="col-md-2 col-form-label">Nombres: </label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lastname" class="col-md-2 col-form-label">Apellidos: </label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="telnum" class="col-12 col-md-2 col-form-label">Teléfono: </label>                            
+                            <div class="col-7 col-md-12">
+                                <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. Number">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-2 col-form-label">RUT/Nombre de Proyecto: </label>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" id="emailid" name="emailid" placeholder="RUT/Project Name">
+                            </div>
+                        </div>                        
+                        <!-- <div class="form-group row">
+                            <label for="feedback" class="col-md-2 col-form-label">Fecha: </label>
+                            <div class="col-md-10">
+                                <input type="date" class="form-control" id="birthday" name="birthday">
+                            </div>
+                        </div> -->
+                        <br>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="submit" class="btn" id="btn">
+                                    Enviar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                </div>
+                
+            </div>
+        </div>
         <!-- BANNER AND FOOTER -->
-
         <div class="banner">
             <div class="bannerText" data-aos="fade-right" data-aos-duration="1000">
-                <h1>Download the HealthCare App Today. <br> <span style="font-size:1.6vw;font-weight:normal"  class="bannerInnerText">
-                    Stay Updated and get all your medical needs taken care of!
-                </span> </h1>
+                <h1>Download the HealthCare App Today. <br> <span style="font-size:1.6vw;font-weight:normal" class="bannerInnerText">
+                        Stay Updated and get all your medical needs taken care of!
+                    </span> </h1>
                 <a href="#"> <img src="img/AndroidPNG.png" alt=""> </a>
                 <a href="#"> <img src="img/iosPNG.png" alt=""> </a>
             </div>
@@ -132,7 +185,6 @@
                 <img src="img/MobileApp.png" alt="">
             </div>
         </div>
-
         <div class="footer">
             <h2>HealthCare.</h2>
             <div class="footerlinks">
@@ -143,10 +195,13 @@
             </div>
         </div>
     </div>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-            AOS.init();
+    AOS.init();
     </script>
+    <script src="validar.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
 </body>
+
 </html>
